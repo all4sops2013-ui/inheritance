@@ -50,4 +50,25 @@ ob1.display()
 
     
 
-        
+#task2
+
+
+class Person:
+
+    def __init__(self,name,id_number):
+        self.name = name
+        self.id_number = id_number
+    
+    def display(self):
+        print(self.name)
+        print(self.id_number)   
+
+class Employee(Person):
+    
+    def __init__(self,name,id_number,post,salary):
+        super().__init__(name, id_number)
+        self.post = post
+        self.salary = salary
+
+ob1 = Employee("n1","id1","s1","p1")
+ob1.display()
